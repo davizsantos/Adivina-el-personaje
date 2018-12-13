@@ -1,12 +1,12 @@
 package Personajes;
 
 public class Personaje {
-	
+
 	private String nombre;
 	String colorPelo;
 	String tipoPelo;
 	String colorGafas;
-	String colorOjos;	
+	String colorOjos;
 	boolean esHombre;
 	boolean narizGrande;
 	boolean tieneColorete;
@@ -16,16 +16,16 @@ public class Personaje {
 	boolean tieneGafas;
 	boolean bocaGrande;
 	boolean tienePendientes;
-	
-	/*ATRIBUTOS DE CADA PERSONAJE*/
 
-	void Alex(){
+	/* ATRIBUTOS DE CADA PERSONAJE */
+
+	void Alex() {
 		setNombre("Alex");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -36,13 +36,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Alfred(){
+
+	void Alfred() {
 		setNombre("Alfred");
 		colorPelo = "pelirrojo";
 		tipoPelo = "largo";
 		colorGafas = null;
 		colorOjos = "azules";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -53,13 +54,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Anita(){
+
+	void Anita() {
 		setNombre("Anita");
 		colorPelo = "rubio";
 		tipoPelo = "largo";
 		colorGafas = null;
 		colorOjos = "azules";
-		
+
 		esHombre = false;
 		narizGrande = false;
 		tieneColorete = true;
@@ -70,13 +72,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Anne(){
+
+	void Anne() {
 		setNombre("Anne");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = false;
 		narizGrande = true;
 		tieneColorete = false;
@@ -87,13 +90,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = true;
 	}
-	void Bernard(){
+
+	void Bernard() {
 		setNombre("Bernard");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = true;
 		tieneColorete = false;
@@ -104,13 +108,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Bill(){
+
+	void Bill() {
 		setNombre("Bill");
 		colorPelo = "pelirrojo";
 		tipoPelo = "calvo";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = true;
@@ -121,13 +126,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Charles(){
+
+	void Charles() {
 		setNombre("Charles");
 		colorPelo = "rubio";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -138,13 +144,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Claire(){
+
+	void Claire() {
 		setNombre("Claire");
 		colorPelo = "pelirrojo";
 		tipoPelo = "corto";
 		colorGafas = "azules";
 		colorOjos = "castaños";
-		
+
 		esHombre = false;
 		narizGrande = false;
 		tieneColorete = false;
@@ -155,13 +162,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = true;
 	}
-	void David(){
+
+	void David() {
 		setNombre("David");
 		colorPelo = "rubio";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -172,13 +180,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Eric(){
+
+	void Eric() {
 		setNombre("Eric");
 		colorPelo = "rubio";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -189,13 +198,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Frans(){
+
+	void Frans() {
 		setNombre("Frans");
 		colorPelo = "pelirrojo";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -206,13 +216,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void George(){
+
+	void George() {
 		setNombre("George");
 		colorPelo = "blanco";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -223,13 +234,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Herman(){
+
+	void Herman() {
 		setNombre("Herman");
 		colorPelo = "pelirrojo";
 		tipoPelo = "calvo";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = true;
 		tieneColorete = false;
@@ -240,13 +252,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Joe(){
+
+	void Joe() {
 		setNombre("Joe");
 		colorPelo = "rubio";
 		tipoPelo = "corto";
 		colorGafas = "rojas";
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -257,13 +270,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Maria(){
+
+	void Maria() {
 		setNombre("Maria");
 		colorPelo = "oscuro";
 		tipoPelo = "largo";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = false;
 		narizGrande = false;
 		tieneColorete = false;
@@ -274,13 +288,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Max(){
+
+	void Max() {
 		setNombre("Max");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = true;
 		tieneColorete = false;
@@ -291,13 +306,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Paul(){
+
+	void Paul() {
 		setNombre("Paul");
 		colorPelo = "blanco";
 		tipoPelo = "corto";
 		colorGafas = "negras";
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -308,13 +324,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Peter(){
+
+	void Peter() {
 		setNombre("Peter");
 		colorPelo = "blanco";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "azules";
-		
+
 		esHombre = true;
 		narizGrande = true;
 		tieneColorete = false;
@@ -325,13 +342,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Philip(){
+
+	void Philip() {
 		setNombre("Philip");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = true;
@@ -342,13 +360,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Richard(){
+
+	void Richard() {
 		setNombre("Richard");
 		colorPelo = "oscuro";
 		tipoPelo = "calvo";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -359,13 +378,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Robert(){
+
+	void Robert() {
 		setNombre("Robert");
 		colorPelo = "oscuro";
 		tipoPelo = "corto";
 		colorGafas = null;
 		colorOjos = "azules";
-		
+
 		esHombre = true;
 		narizGrande = true;
 		tieneColorete = true;
@@ -376,13 +396,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Sam(){
+
+	void Sam() {
 		setNombre("Sam");
 		colorPelo = "blanco";
 		tipoPelo = "calvo";
 		colorGafas = "negras";
 		colorOjos = "castaños";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -393,13 +414,14 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	void Susan(){
+
+	void Susan() {
 		setNombre("Susan");
 		colorPelo = "blanco";
 		tipoPelo = "largo";
 		colorGafas = null;
 		colorOjos = "castaños";
-		
+
 		esHombre = false;
 		narizGrande = false;
 		tieneColorete = true;
@@ -410,13 +432,14 @@ public class Personaje {
 		bocaGrande = true;
 		tienePendientes = false;
 	}
-	void Tom(){
+
+	void Tom() {
 		setNombre("Tom");
 		colorPelo = "oscuro";
 		tipoPelo = "calvo";
 		colorGafas = "azules";
 		colorOjos = "azules";
-		
+
 		esHombre = true;
 		narizGrande = false;
 		tieneColorete = false;
@@ -427,8 +450,7 @@ public class Personaje {
 		bocaGrande = false;
 		tienePendientes = false;
 	}
-	
-	
+
 	@Override
 	public String toString() {
 		return "Personaje [nombre=" + getNombre() + "]";
@@ -441,81 +463,107 @@ public class Personaje {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public String getColorPelo() {
 		return colorPelo;
 	}
+
 	public void setColorPelo(String colorPelo) {
 		this.colorPelo = colorPelo;
 	}
+
 	public String getTipoPelo() {
 		return tipoPelo;
 	}
+
 	public void setTipoPelo(String tipoPelo) {
 		this.tipoPelo = tipoPelo;
 	}
+
 	public String getColorGafas() {
 		return colorGafas;
 	}
+
 	public void setColorGafas(String colorGafas) {
 		this.colorGafas = colorGafas;
 	}
+
 	public String getColorOjos() {
 		return colorOjos;
 	}
+
 	public void setColorOjos(String colorOjos) {
 		this.colorOjos = colorOjos;
 	}
+
 	public boolean isEsHombre() {
 		return esHombre;
 	}
+
 	public void setEsHombre(boolean esHombre) {
 		this.esHombre = esHombre;
 	}
+
 	public boolean isNarizGrande() {
 		return narizGrande;
 	}
+
 	public void setNarizGrande(boolean narizGrande) {
 		this.narizGrande = narizGrande;
 	}
+
 	public boolean isTieneColorete() {
 		return tieneColorete;
 	}
+
 	public void setTieneColorete(boolean tieneColorete) {
 		this.tieneColorete = tieneColorete;
 	}
+
 	public boolean isTieneBigote() {
 		return tieneBigote;
 	}
+
 	public void setTieneBigote(boolean tieneBigote) {
 		this.tieneBigote = tieneBigote;
 	}
+
 	public boolean isTieneSombrero() {
 		return tieneSombrero;
 	}
+
 	public void setTieneSombrero(boolean tieneSombrero) {
 		this.tieneSombrero = tieneSombrero;
 	}
+
 	public boolean isTieneBarba() {
 		return tieneBarba;
 	}
+
 	public void setTieneBarba(boolean tieneBarba) {
 		this.tieneBarba = tieneBarba;
 	}
+
 	public boolean isTieneGafas() {
 		return tieneGafas;
 	}
+
 	public void setTieneGafas(boolean tieneGafas) {
 		this.tieneGafas = tieneGafas;
 	}
+
 	public boolean isBocaGrande() {
 		return bocaGrande;
 	}
+
 	public void setBocaGrande(boolean bocaGrande) {
 		this.bocaGrande = bocaGrande;
 	}
+
 	public boolean isTienePendientes() {
 		return tienePendientes;
 	}
+
 	public void setTienePendientes(boolean tienePendientes) {
 		this.tienePendientes = tienePendientes;
 	}

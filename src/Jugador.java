@@ -5,59 +5,62 @@ import Personajes.Personajes;
 
 public class Jugador {
 
-	boolean turnoDePreguntar=true;
-	boolean haGanado=false;
-	
+
+	String nombre;
+	boolean turnoDePreguntar = true;
+	boolean haGanado = false;
+
 	Personaje personajeAdjudicado;
-	int preguntasHechas[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,}; //"1" pregunta hecha, "0" pregunta sin hacer
-	int cantidadDePruguntasRealizadas=0;
-	
+	// "1" pregunta hecha, "0" pregunta sin hacer
+	int preguntasHechas[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, };
+	int cantidadDePruguntasRealizadas = 0;
+	static String tiempoConsumido = "00:00:000";
+
 	ImageIcon personajeImageIcon;
-	
-	Jugador(String nombreParam){
+
+	Jugador(String nombreParam) {
 		nombre = nombreParam;
-		personajeAdjudicado=Jugador.seleccionAletoriaPersonaje();
+		personajeAdjudicado = seleccionAletoriaPersonaje();
 	}
-	
-	static Personaje seleccionAletoriaPersonaje(){
-		System.out.println("Asignando personaje ...");
+
+	Personaje seleccionAletoriaPersonaje() {
+		System.out.println("Asignando personaje al jugador " + this.getNombre() + " ...");
 		Personajes p = new Personajes();
-		int posicion=(int) Math.floor(Math.random()*24);
-		System.out.println("Personaje asignado");
+		int posicion = (int) Math.floor(Math.random() * 24);
+		System.out.println("Personaje asignado: " + p.personajes[posicion].getNombre());
 		return p.personajes[posicion];
 	}
-	
-	static boolean personajeAcerdado(String intentar, Jugador pc){
-		if(intentar.equalsIgnoreCase(pc.personajeAdjudicado.getNombre())){
+
+	static boolean personajeAcerdado(String intentar, Jugador pc) {
+		if (intentar.equalsIgnoreCase(pc.personajeAdjudicado.getNombre())) {
 			return true;
-		}else{
+		} else {
 			return false;
 		}
 	}
-	
-	void realizarPregunta(){
+
+	void realizarPregunta() {
 		System.out.println("El " + this.nombre + " va a realizar una pregunta");
 		String preguntas[] = Preguntas.preguntasArrayStr;
-		int i=0;
+		int i = 0;
 		System.out.println("Preguntas disponibles para " + this.nombre);
-		for (i=0; i<preguntas.length; i++) {
-			if(preguntasHechas[i]!=1)
+		for (i = 0; i < preguntas.length; i++) {
+			if (preguntasHechas[i] != 1)
 				System.out.println("i: " + i + " - " + preguntas[i]);
 		}
-		//tacharPregunta(preguntasHechas, i);
+		// tacharPregunta(preguntasHechas, i);
 	}
-	
-	void tacharPregunta(int preguntasHechas[], int posicion){
-		System.out.println("Se procede a tachar la pregunta de la posición "+posicion);
-		preguntasHechas[posicion]=1;
-		System.out.println("Se ha tachado la pregunta "+preguntasHechas[posicion]);
+
+	void tacharPregunta(int preguntasHechas[], int posicion) {
+		System.out.println("Se procede a tachar la pregunta de la posición " + posicion);
+		preguntasHechas[posicion] = 1;
+		System.out.println("Se ha tachado la pregunta " + preguntasHechas[posicion]);
 	}
-	
+
 	/**
 	 * Getters y setters
 	 */
-	
-	String nombre;
+
 	public String getNombre() {
 		return nombre;
 	}
