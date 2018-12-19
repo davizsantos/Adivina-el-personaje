@@ -1,42 +1,66 @@
+/**
+ * Clase principal de la aplicacion. 
+ * Se trata de un juego parecido al "Quien es quien", en el que hay que adivinar el personaje escondido mediante una serie de preguntas cuyas respuestas serán SI o NO.
+ * 
+ * @author david santos palmero
+ * @version v1.0
+ *
+ */
 public class Juego {
 
 	static Jugador J1;
 	static Jugador PC;
 
+	/**
+	 * Constructor por defecto.
+	 */
 	Juego() {
-
 	}
 
+	/**
+	 * Metodo principal de la aplicacion.
+	 * 
+	 * @param args por defecto
+	 */
 	public static void main(String[] args) {
-		crearJugadores(J1, PC);
-		calcularTurno(J1, PC);
-		generarVentana(J1, PC);
+		Juego juego = new Juego();
+		juego.jugar();
 	}
 
-	static void generarVentana(Jugador j1, Jugador pc) {
-		System.out.println("Generando la ventana...");
-		Ventana frame = new Ventana();
-		frame.setVisible(true);
-		System.out.println("Ventana generada");
+	/**
+	 * Metodo que da inicio al juego.
+	 */
+	public void jugar() {
+		crearJugadores();
+		calcularTurno();
+		generarVentana();
 	}
 
-	static void crearJugadores(Jugador j1, Jugador pc) {
-		int contador = 1;
+	/**
+	 * Metodo mediante el cual se instancia la ventana principal del juego de la que luego saldrán el resto de ventanas emergentes.
+	 */
+	static void generarVentana() {
+		// Se crea el objeto Ventana que es el que engloba todo el juego
+		new Ventana();
+	}
+
+	/**
+	 * Metodo que crea los jugadores que participan en el juego.
+	 */
+	static void crearJugadores() {
 		System.out.println("Creando jugadores...");
 		do {
-			System.out.println("Intento de creación de jugadores nº " + contador);
-			System.out.println("Creando jugador 1...");
-			J1 = new Jugador("J1"); // Se crea el Jugador
-			System.out.println("Creando jugador PC...");
-			PC = new Jugador("PC"); // Se crea el PC
-			contador++;
-			// Se vuelven a elegir personajes si se ha elegido el mismo personaje para J1
-			// que para PC
+			J1 = new Jugador("J1");
+			PC = new Jugador("PC");
+			// Se vuelven a elegir personajes si se ha elegido el mismo personaje para J1 que para PC
 		} while (J1.personajeAdjudicado.getNombre().equalsIgnoreCase(PC.personajeAdjudicado.getNombre()));
 		System.out.println("Jugadores creados");
 	}
 
-	static void calcularTurno(Jugador j1, Jugador pc) {
+	/**
+	 * Metodo que calcula que jugador comienza primero a jugar.
+	 */
+	static void calcularTurno() {
 		System.out.println("Calculando turno...");
 		Turno turno = new Turno();
 		turno.calcularTurno();

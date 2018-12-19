@@ -1,5 +1,12 @@
 package Personajes;
 
+/**
+ * Clase que contiene las caracteristicas de cada Personaje.
+ * 
+ * @author david santos palmero
+ * @version v1.0
+ *
+ */
 public class Personaje {
 
 	private String nombre;
@@ -17,8 +24,9 @@ public class Personaje {
 	boolean bocaGrande;
 	boolean tienePendientes;
 
-	/* ATRIBUTOS DE CADA PERSONAJE */
-
+	/**
+	 * Metodo que crea el Personaje Alex.
+	 */
 	void Alex() {
 		setNombre("Alex");
 		colorPelo = "oscuro";
@@ -37,6 +45,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Alfred.
+	 */
 	void Alfred() {
 		setNombre("Alfred");
 		colorPelo = "pelirrojo";
@@ -55,6 +66,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Anita.
+	 */
 	void Anita() {
 		setNombre("Anita");
 		colorPelo = "rubio";
@@ -73,6 +87,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Anne.
+	 */
 	void Anne() {
 		setNombre("Anne");
 		colorPelo = "oscuro";
@@ -91,6 +108,9 @@ public class Personaje {
 		tienePendientes = true;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Bernard.
+	 */
 	void Bernard() {
 		setNombre("Bernard");
 		colorPelo = "oscuro";
@@ -109,6 +129,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Bill.
+	 */
 	void Bill() {
 		setNombre("Bill");
 		colorPelo = "pelirrojo";
@@ -127,6 +150,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Charles.
+	 */
 	void Charles() {
 		setNombre("Charles");
 		colorPelo = "rubio";
@@ -145,6 +171,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Claire.
+	 */
 	void Claire() {
 		setNombre("Claire");
 		colorPelo = "pelirrojo";
@@ -163,6 +192,9 @@ public class Personaje {
 		tienePendientes = true;
 	}
 
+	/**
+	 * Metodo que crea el Personaje David.
+	 */
 	void David() {
 		setNombre("David");
 		colorPelo = "rubio";
@@ -181,6 +213,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Eric.
+	 */
 	void Eric() {
 		setNombre("Eric");
 		colorPelo = "rubio";
@@ -199,6 +234,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Frans.
+	 */
 	void Frans() {
 		setNombre("Frans");
 		colorPelo = "pelirrojo";
@@ -217,6 +255,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje George.
+	 */
 	void George() {
 		setNombre("George");
 		colorPelo = "blanco";
@@ -235,6 +276,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Herman.
+	 */
 	void Herman() {
 		setNombre("Herman");
 		colorPelo = "pelirrojo";
@@ -253,6 +297,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Joe.
+	 */
 	void Joe() {
 		setNombre("Joe");
 		colorPelo = "rubio";
@@ -271,6 +318,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Maria.
+	 */
 	void Maria() {
 		setNombre("Maria");
 		colorPelo = "oscuro";
@@ -289,6 +339,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Max.
+	 */
 	void Max() {
 		setNombre("Max");
 		colorPelo = "oscuro";
@@ -307,6 +360,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Paul.
+	 */
 	void Paul() {
 		setNombre("Paul");
 		colorPelo = "blanco";
@@ -325,6 +381,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Peter.
+	 */
 	void Peter() {
 		setNombre("Peter");
 		colorPelo = "blanco";
@@ -343,6 +402,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Philip.
+	 */
 	void Philip() {
 		setNombre("Philip");
 		colorPelo = "oscuro";
@@ -361,6 +423,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Richard.
+	 */
 	void Richard() {
 		setNombre("Richard");
 		colorPelo = "oscuro";
@@ -379,6 +444,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Robert.
+	 */
 	void Robert() {
 		setNombre("Robert");
 		colorPelo = "oscuro";
@@ -397,6 +465,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Sam.
+	 */
 	void Sam() {
 		setNombre("Sam");
 		colorPelo = "blanco";
@@ -415,6 +486,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Susan.
+	 */
 	void Susan() {
 		setNombre("Susan");
 		colorPelo = "blanco";
@@ -433,6 +507,9 @@ public class Personaje {
 		tienePendientes = false;
 	}
 
+	/**
+	 * Metodo que crea el Personaje Tom.
+	 */
 	void Tom() {
 		setNombre("Tom");
 		colorPelo = "oscuro";
